@@ -46,7 +46,6 @@ fn create_structure(base_path: &PathBuf, node: &Node) -> Result<()> {
     } else {
         eprintln!("Unknown node type: {}", node.node_type);
     }
-    println!("Directory structure created successfully.");
     Ok(())
 }
 
@@ -67,5 +66,9 @@ fn main() -> Result<()> {
         }
     };
 
-    create_structure(&args.output, &root_node)
+    println!("Directory structure created successfully!");
+
+    let _ = create_structure(&args.output, &root_node);
+
+    Ok(())
 }
