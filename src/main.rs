@@ -1,10 +1,9 @@
+use clap::Parser;
 use serde::Deserialize;
 use std::fs::{create_dir_all, read_to_string, File};
 use std::io::Result;
 use std::path::PathBuf;
 use std::process::exit;
-use clap::{Parser};
-
 
 #[derive(Parser, Debug)]
 #[command(name = "Directory Builder")]
@@ -17,13 +16,12 @@ struct Cli {
     output: PathBuf,
 }
 
-
 #[derive(Deserialize)]
 struct Node {
     name: String,
     #[serde(rename = "type")]
     node_type: String,
-    children: Option<Vec<Node>>
+    children: Option<Vec<Node>>,
 }
 
 fn create_structure(base_path: &PathBuf, node: &Node) -> Result<()> {
