@@ -1,0 +1,99 @@
+{
+    "name": "wallet",
+    "type": "directory",
+    "children": [
+      {
+        "name": "src",
+        "type": "directory",
+        "children": [
+          {
+            "name": "cli",
+            "type": "directory",
+            "children": [
+              {
+                "name": "index.ts",
+                "type": "file"
+              },
+              {
+                "name": "onboarding.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "config",
+            "type": "directory",
+            "children": [
+              {
+                "name": "constants.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "core",
+            "type": "directory",
+            "children": [
+              {
+                "name": "wallet-manager.ts",
+                "type": "file"
+              },
+              {
+                "name": "wallet-store.ts",
+                "type": "file"
+              },
+              {
+                "name": "command-parser.ts",
+                "type": "file"
+              },
+              {
+                "name": "transaction-builder.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils",
+            "type": "directory",
+            "children": [
+              {
+                "name": "encryption.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "types",
+            "type": "directory",
+            "children": [
+              {
+                "name": "index.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "index.ts",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "package.json",
+        "type": "file"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ]
+  }
+  
