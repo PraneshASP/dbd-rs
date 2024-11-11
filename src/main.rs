@@ -1,11 +1,9 @@
 use serde::Deserialize;
-use std::env::args;
 use std::fs::{create_dir_all, read_to_string, File};
 use std::io::Result;
-use std::os::unix::process;
 use std::path::PathBuf;
 use std::process::exit;
-use clap::{Command, Parser};
+use clap::{Parser};
 
 
 #[derive(Parser, Debug)]
