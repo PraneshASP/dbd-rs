@@ -2,6 +2,8 @@
 
 A simple rust based CLI tool to create directory structures from a JSON file.
 
+![](./demo.gif)
+
 ## Overview
 
 **Directory Builder** is a command-line tool that reads a JSON file representing a directory structure and recreates that structure on your filesystem. This tool is ideal for:
